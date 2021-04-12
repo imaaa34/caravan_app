@@ -20,6 +20,7 @@ class BlogsController < ApplicationController
   end
 
   def edit
+    @blog = Blog.find(blog_params)
   end
 
   private
